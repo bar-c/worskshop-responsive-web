@@ -31,6 +31,7 @@ nav ul li a{
     font-size: 15px;
     text-transform: uppercase;
     color:white;
+    text-decoration: none;
     
 }
 nav ul li  {
@@ -82,6 +83,7 @@ span.linea:before, span.linea:after{
     display: inline-block;
     content: '';
     position: relative;
+    bottom: 6px;
 }
 
 .imagenes img{
@@ -109,6 +111,7 @@ span.linea2:before, span.linea2:after{
     display: inline-block;
     content: '';
     position: relative;
+    bottom: 6px;
 }
 
 .galeria{
@@ -173,15 +176,17 @@ h2.white{
 }
 
 .ordenar input{
-width: 100%;
+    width: 100%;
     margin-top: 10px;
-    border: 1px solid lightgray;
-    border-right: none;
-    border-left:none;
+    border: none;
+    border-bottom: 1px solid lightgray;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
+.ordenar input:first-child{
+    border-top: 1px solid lightgray;
+}
 .ordenar input:nth-child(4){
     padding-top: 15px;
     padding-bottom: 100px;
@@ -218,6 +223,7 @@ footer{
 .pie article{
     display: inline-block;
     max-width: 33%;
+    margin-right: 20px;
 }
 .redes{
     display: flex;
@@ -254,7 +260,7 @@ footer{
     border: 1px solid white;
     width: 30px;
     border-radius: 50%;
-    padding: 8px;
+    
 }
 
 .pie article span{
@@ -271,7 +277,7 @@ footer{
 
 
 
-@media screen and (min-width:612px) and (max-width:1031px){
+@media screen and (min-width:600px) and (max-width:1031px){
      .imagenes{
         max-width: 85%;
     }
